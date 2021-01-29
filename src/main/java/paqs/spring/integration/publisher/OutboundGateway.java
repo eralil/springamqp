@@ -2,7 +2,7 @@ package paqs.spring.integration.publisher;
 
 import org.springframework.integration.annotation.MessagingGateway;
 
-@MessagingGateway(defaultRequestChannel = "amqpOutboundChannel")
+@MessagingGateway(defaultRequestChannel = "devDataChannel")
 public interface OutboundGateway {
 	void sendToRabbit(byte[] message);
 }
